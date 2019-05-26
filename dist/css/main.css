@@ -91,6 +91,47 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.project-lg-heading,
+  h2.project-lg-heading,
+  h3.project-lg-heading {
+    font-size: 6rem; }
+  h1.project-sm-heading,
+  h2.project-sm-heading,
+  h3.project-sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    color: #fca21a;
+    background: rgba(48, 157, 229, 0.1); }
+
+.project-about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "bioimage1 bio bio";
+  grid-template-columns: repeat(3, 1fr); }
+  .project-about-info .project-bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: #fca21a solid 3px; }
+  .project-about-info .project-bio-image1 {
+    grid-area: bioimage1;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: #fca21a solid 3px; }
+  .project-about-info .project-bio {
+    grid-area: bio;
+    font-size: 1.25rem;
+    background: #3ea4e7;
+    padding: 0.5rem;
+    border-bottom: #fca21a 3px solid; }
+
 * {
   box-sizing: border-box; }
 

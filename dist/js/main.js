@@ -1,35 +1,24 @@
 
-  //do work
+// variables for menu 
   const menuBtn = document.querySelector(".menu-btn");
   const menu = document.querySelector(".menu");
   const menuNav = document.querySelector(".menu-nav");
   const menuBranding = document.querySelector(".menu-branding");
   const navItems = document.querySelectorAll(".nav-item");
- 
   const view = document.querySelectorAll(".btn-light");
-console.log("items on load")
+
+
+
   //set initial state of menu / overlay to false.
   let showMenu = false;
 
-  
+
   menuBtn.addEventListener("click", toggleMenu);
 
-(function() {
-  const items = document.querySelectorAll(".btn-light");
-  for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener("click", toggleMenu)
-  }
-})();
 
-(function() {
-  const items = document.querySelectorAll(".projectPicture");
-  for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener("click", toggleMenu)
-  }
-})();
-  
 
-  function toggleMenu(event) {
+  //toggling to show / hide projects
+  function toggleMenu() {
     if (!showMenu) {
       menuBtn.classList.add("close");
       menu.classList.add("show");

@@ -1,0 +1,51 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.project-lg-heading {
+    font-size: 6rem;
+  }
+
+  &.project-sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    color: $secondary-color;
+    background: rgba(lighten($primary-color, 2), 0.1);
+  }
+}
+
+.project-about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      "bioimage bio bio"
+      "bioimage1 bio bio";
+    grid-template-columns: repeat(3, 1fr);
+  
+    .project-bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      width: 250px;
+      height: 250px;
+      border: $secondary-color solid 3px;
+    }
+
+    .project-bio-image1 {
+        grid-area: bioimage1;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        border: $secondary-color solid 3px;
+      }
+  
+    .project-bio {
+      grid-area: bio;
+      font-size: 1.25rem;
+      background: lighten($primary-color, 5);
+      padding: 0.5rem;
+      border-bottom: $secondary-color 3px solid;
+    }
+  
+  }
