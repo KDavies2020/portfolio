@@ -105,7 +105,6 @@ h3 {
   h3.project-sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    color: #fca21a;
     background: rgba(48, 157, 229, 0.1); }
 
 .project-about-info {
@@ -116,21 +115,22 @@ h3 {
   .project-about-info .project-bio-image {
     grid-area: bioimage;
     margin: auto;
-    width: 250px;
-    height: 250px;
+    width: 375px;
+    height: 325px;
     border: #fca21a solid 3px; }
   .project-about-info .project-bio-image1 {
     grid-area: bioimage1;
     margin: auto;
-    width: 250px;
-    height: 250px;
+    width: 375px;
+    height: 325px;
     border: #fca21a solid 3px; }
   .project-about-info .project-bio {
     grid-area: bio;
     font-size: 1.25rem;
     background: #3ea4e7;
     padding: 0.5rem;
-    border-bottom: #fca21a 3px solid; }
+    border-bottom: #fca21a 3px solid;
+    border-top: #fca21a 1px solid; }
 
 * {
   box-sizing: border-box; }
@@ -143,7 +143,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background.jpeg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -154,7 +154,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(39, 153, 228, 0.25); }
+      background: rgba(39, 153, 228, 0.1); }
 
 h1,
 h2,
@@ -231,7 +231,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: .75rem; }
   .projects img {
     width: 100%;
     height: 30vh;
@@ -286,7 +286,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

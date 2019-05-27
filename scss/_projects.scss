@@ -11,7 +11,7 @@ h3 {
   &.project-sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    color: $secondary-color;
+    
     background: rgba(lighten($primary-color, 2), 0.1);
   }
 }
@@ -27,16 +27,16 @@ h3 {
     .project-bio-image {
       grid-area: bioimage;
       margin: auto;
-      width: 250px;
-      height: 250px;
+      width: 375px;
+      height: 325px;
       border: $secondary-color solid 3px;
     }
 
     .project-bio-image1 {
         grid-area: bioimage1;
         margin: auto;
-        width: 250px;
-        height: 250px;
+        width: 375px;
+        height: 325px;
         border: $secondary-color solid 3px;
       }
   
@@ -46,6 +46,7 @@ h3 {
       background: lighten($primary-color, 5);
       padding: 0.5rem;
       border-bottom: $secondary-color 3px solid;
+      border-top: $secondary-color 1px solid
     }
   
   }

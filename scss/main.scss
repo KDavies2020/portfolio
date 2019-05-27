@@ -120,7 +120,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
+  grid-gap: .75rem;
 
   img {
     width: 100%;

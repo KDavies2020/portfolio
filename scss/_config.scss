@@ -1,8 +1,8 @@
 $primary-color: rgb(39, 153, 228);
 $secondary-color: #fca21a;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.25;
+$home-image: url(../img/background.jpeg);
+$background-opacity: 0.1;
 
 //for fading in and out
 @mixin easeOut {
